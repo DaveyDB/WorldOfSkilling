@@ -13,4 +13,10 @@ public class Node_Ore : Interactable {
 	void Update () {
 		
 	}
+
+    override
+    protected void Interact()
+    {
+        Debug.Log("You are mining");
+    }
 }
