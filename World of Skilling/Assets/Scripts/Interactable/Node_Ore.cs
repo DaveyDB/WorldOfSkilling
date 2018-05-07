@@ -14,9 +14,13 @@ public class Node_Ore : Interactable {
 		
 	}
 
-    override
-    protected void Interact()
+    protected override void Interact()
     {
-        Debug.Log("You are mining");
+        Debug.Log("You try to mine some "+objectName+".");
+    }
+
+    protected override string getMouseOverText()
+    {
+        return "<color=white>Mine </color><color=yellow>" + objectName + "</color>";
     }
 }
